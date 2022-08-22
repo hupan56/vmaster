@@ -84,7 +84,7 @@ export default {
                     console.log(refs.data.token)
                     //导航跳转到主页
                     this.$router.push("/home")
-                    console.log(this)
+                    // console.log(this)
                 }
             })
         },
