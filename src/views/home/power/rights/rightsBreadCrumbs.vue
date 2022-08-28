@@ -3,8 +3,8 @@
         <!-- 面包屑导航区 -->
         <el-breadcrumb separator="/">
             <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{ path: '/users' }">用户管理</el-breadcrumb-item>
-            <el-breadcrumb-item>用户列表</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/rights' }">权限管理</el-breadcrumb-item>
+            <el-breadcrumb-item>权限列表</el-breadcrumb-item>
         </el-breadcrumb>
 </template>
 
@@ -13,7 +13,7 @@
 //例如：import 《组件名称》 from '《组件路径》';
 
 export default {
-    name:"BreadCrumbs",
+    name:"rightsBreadCrumbs",
     //import引入的组件需要注入到对象中才能使用
     components: {},
     data() {

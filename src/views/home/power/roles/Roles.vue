@@ -1,21 +1,20 @@
 <!--  -->
 <template>
-        <!-- 面包屑导航区 -->
-        <el-breadcrumb separator="/">
-            <el-breadcrumb-item :to="{ path: '/home' }">首页</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{ path: '/users' }">用户管理</el-breadcrumb-item>
-            <el-breadcrumb-item>用户列表</el-breadcrumb-item>
-        </el-breadcrumb>
+    <div class=''>
+        <RolesBreadCrumbs></RolesBreadCrumbs>
+        <RolesCard></RolesCard>
+    </div>
 </template>
 
 <script>
 //这里可以导入其他文件（比如：组件，工具js，第三方插件js，json文件，图片文件等等）
 //例如：import 《组件名称》 from '《组件路径》';
-
+import RolesBreadCrumbs from './RolesBreadCrumbs.vue'
+import RolesCard from './RolesCard.vue';
 export default {
-    name:"BreadCrumbs",
     //import引入的组件需要注入到对象中才能使用
-    components: {},
+    name:"Roles",
+    components: { RolesBreadCrumbs, RolesCard },
     data() {
         //这里存放数据
         return {

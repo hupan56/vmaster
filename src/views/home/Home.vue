@@ -79,6 +79,8 @@ export default {
 <style lang="less" scoped>
 .home-container {
     height: 100vh;
+    // width: 1600px;
+    // margin: 0  auto 0 ;
 }
 
 .el-header {
