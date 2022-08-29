@@ -4,6 +4,8 @@ import router from './router'
 import './plugins/element.js'
 //设置全局css
 import './assets/css/global.css'
+import ZkTable from 'vue-table-with-tree-grid'
+
 import axios from 'axios'; 
 Vue.config.productionTip = false
 //配置请求的根路径
@@ -14,7 +16,7 @@ axios.interceptors.request.use((config)=>{
   return config
 })
 Vue.prototype.$http =axios
-
+Vue.component('tree-table', ZkTable)
 new Vue({
   router,
   render: h => h(App)
