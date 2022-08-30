@@ -3,7 +3,7 @@ import { Button ,Form,FormItem,Input,Message,Container,Header,Aside,Main,
     Menu,Submenu,MenuItem,MenuItemGroup,
     Breadcrumb,BreadcrumbItem,Card,Select,Option,Row,Col,
     Table,TableColumn,Switch,Tooltip,Pagination,Dialog,
-    MessageBox ,Tag,Tree,Cascader
+    MessageBox ,Tag,Tree,Cascader,Alert,Tabs,TabPane,Loading
 } from 'element-ui'
 
 
@@ -35,6 +35,11 @@ Vue.use(Input)
 Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
+// Vue.use(Loading)
 
 Vue.prototype.$message=Message
 Vue.prototype.$confirm=MessageBox.confirm
+Vue.prototype.$loading=Loading.service

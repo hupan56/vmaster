@@ -32,8 +32,9 @@
                         </el-switch>
                     </template>
                 </el-table-column>
-                <el-table-column label="操作" width="300px">
+                <el-table-column label="操作" width="200px" class="btntest">
                     <template slot-scope="scope">
+                        <div class="top">
                         <!-- 修改按钮 -->
                         <el-tooltip effect="dark" content="修改" placement="top" :enterable="false">
                             <el-button type="primary" icon="el-icon-edit" size="small"
@@ -42,14 +43,17 @@
                         </el-tooltip>
                         <!-- 删除按钮 -->
                         <el-tooltip effect="dark" content="删除" placement="top" :enterable="false">
+                            
                             <el-button type="danger" icon="el-icon-delete" size="small"
                                 @click="deleteUser(scope.row.id)"></el-button>
+                            
                         </el-tooltip>
                         <!-- 分配角色按钮 -->
                         <el-tooltip effect="dark" content="分配角色" placement="top" :enterable="false">
                             <el-button type="warning" icon="el-icon-setting" size="small" @click="setRole(scope.row)">
                             </el-button>
                         </el-tooltip>
+                    </div>
                     </template>
                 </el-table-column>
                 <el-table-column prop="create_time" label="创建时间" width="180"></el-table-column>
@@ -406,7 +410,9 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-.el-pagination {}
+ .top {
+      width: 400px;
+    }
 
 /* @import url(); 引入公共css类 */
 </style>

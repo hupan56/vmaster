@@ -1,9 +1,12 @@
 /* 全局css */
 html,body,#app{
+    /* position: flex; */
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
+   
     min-width: 1366px;
+    /* text-align: center; */
 }
 .el-breadcrumb{
     margin-bottom: 15px;
@@ -31,4 +34,7 @@ html,body,#app{
 .el-cascader-menu {
     height: 250px;
     
+}
+.el-tooltip{
+    width: 50px;
 }
